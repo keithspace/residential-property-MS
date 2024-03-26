@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="font-awesome-6.1.1.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.5.2.min.css">
+
+    <title>Home</title>
+    <style>
+        /* CSS styling */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1A2238;
+            color: #FDF5DF;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #3e70a8;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background-color: #eee;
+            padding: 50px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin-bottom: 20px;
+        }
+        .hero p {
+            margin-bottom: 0;
+        }
+        footer {
+            background-color: #3e70a8;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+            /* Add your custom styles here */
+
+    #contact-section {
+      margin: 0;
+    }
+
+    /* Add more styles as needed */
+    .carousel-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .carousel-caption {
+    bottom: 50%; /* Adjust this value to vertically center as needed */
+    transform: translateY(50%); /* Adjusts the position to truly center based on the element's size */
+    text-align: center; /* Ensures the text is centered horizontally */
+    font-size: 2rem; /* Larger text; adjust size as needed */
+}
+.carousel-caption h5 {
+        font-size: 4rem; /* Larger text for the heading */
+        text-shadow: 2px 2px 4px #000; /* Optional: Adds a shadow to make text more legible against backgrounds */
+    }
+    
+    /* Ensure the custom styling does not interfere with responsiveness */
+    @media (max-width: 768px) {
+        .carousel-caption h5 {
+            font-size: 1.5rem; /* Smaller text for smaller devices */
+        }
+    }
+        .carousel-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 100px;
+            text-align: center;
+        }
+        .contact-icon {
+    margin-right: 10px; /* Spacing between icons */
+    color: #333; /* Icon color */
+    font-size: 24px; /* Icon size */
+}
+
+.contact-icon:hover {
+    color: #007bff; /* Icon hover color, adjust as needed */
+}
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NESTQUEST &#169</h1>
+    </header>
+    <nav>
+        <a class="active" href="home.html">Home</a>
+        <a href="/rpms/cat2.jsp">Properties</a>
+        <!--<a href="/careers.html">Careers</a>-->
+        <a href="testimonial.html">Testimonials</a>
+        <a href="about.html">About us</a>
+       
+    </nav>     
+
+<!-- Carousel Section -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="new1.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>THE SEARCH BEGINS HERE!</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="kager.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>EXPLORE OUR HUGE CATALOGUE</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="new1.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>LET US HELP YOU FIND YOUR DREAM HOME</h5>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+ 
+  <!-- Contact Section -->
+  <div id="contact-section" class="container">
+    <h3>Contact Us</h3>
+    <p>Email: info@nestquest.com</p>
+    <p>Phone: +254 7 456-7890</p>
+    <!-- Icon Links -->
+    <a href="https://twitter.com/nestquest" target="_blank" class="contact-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://instagram.com/nestquest" target="_blank" class="contact-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://facebook.com/nestquest" target="_blank" class="contact-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="mailto:info@nestquest.com" class="contact-icon">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+
+
+    <div class="container">
+        <div class="hero">
+            <h1>Book For Viewing With Us Today.</h1>
+            <p>Explore within our huge catalogue for the very best places to call home.</p>
+        </div>
+    </div>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script>
+     $(document).ready(function(){
+     $('#carouselExampleIndicators').carousel();
+     });
+    </script>
+ <footer>
+        <p> &#169 copyright 2024 NestQuest.</p>
+     </footer>
+    
+</body>
+</html>
+
