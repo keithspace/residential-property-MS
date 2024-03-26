@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.properties{
+    top: 40%;
+    font-size: 30px;
+    text-align: center;
+ }
+
+nav {
+    background-color: #3e70a8;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #1A2238;
+    color: #FDF5DF;
+    padding: 20px;
+    text-align: center;
+}
+
+.col{
+    float: left;
+}
+.image img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+  }
+
+
+.card:hover{
+    box-shadow:2px 2px 10px black ;
+}
+
+
+.image img{
+    width: 100%;
+    height: 500%;
+    border-top-right-radius:5px ;
+    border-top-left-radius:5px;
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: center;
+}
+button:hover{
+    background-color:black ;
+    color: beige;
+    transition: .5s;
+}
+footer {
+    background-color: #3e70a8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS for category cards */
+.card {
+    width: calc(30.33% - 20px); /* Adjust card width and include margins */
+    margin: 20px 10px; /* Add margin around each card */
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure images don't overflow */
+    position: relative; /* Positioning context for child elements */
+}
+
+.card img {
+    width: 200px; /* Make the image fill the entire width of the card */
+    height: 300px; /* Maintain aspect ratio */
+}
+
+.card h2 {
+    position: absolute; /* Position the heading relative to the card */
+    bottom: 10px; /* Distance from the bottom of the card */
+    left: 0; /* Align the heading to the left */
+    width: 100%; /* Ensure the heading spans the entire width of the card */
+    margin: 0; /* Remove default margin */
+    background-color : rgba(255, 255, 255, 0.3); /*Semi-transparent background */
+    padding: 10px; /* Add padding to improve readability */
+}
+
+
+.card h3 {
+    position: absolute; /* Position the property name at the bottom */
+    bottom: 35px; /* Align the property name at the bottom */
+    left: 0; /* Align the property name to the left */
+    width: 100%; /* Ensure the property name spans the entire width */
+    margin: 0; /* Remove default margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px; /* Add padding to improve readability */
+}
